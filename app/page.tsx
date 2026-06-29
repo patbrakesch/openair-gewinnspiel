@@ -23,7 +23,11 @@ export default function Home() {
   } else {
   const result = await res.json();
 
-    if (result.error?.includes("duplicate key")) {
+    if (
+      result.code === "23505" ||
+      result.error?.toLowerCase().includes("duplicate") ||
+      result.error?.toLowerCase().includes("unique")
+    ) {
       alert("Du hast bereits am Gewinnspiel teilgenommen. Pro Person ist nur eine Teilnahme möglich.");
     } else {
       alert("Es gab ein Problem. Bitte versuche es nochmals.");
