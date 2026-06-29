@@ -20,6 +20,15 @@ export async function POST(req: Request) {
     phone: body.phone,
   });
 
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  if (error) {
+    return NextResponse.json(
+      {
+        error: error.message,
+        code: error.code,
+      },
+      { status: 500 }
+    );
+  }
+
   return NextResponse.json({ ok: true });
 }
