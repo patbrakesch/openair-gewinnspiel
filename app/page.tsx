@@ -18,8 +18,18 @@ export default function Home() {
       body: JSON.stringify(data),
     });
 
-    if (res.ok) setSent(true);
-    else alert("Es gab ein Problem. Bitte versuche es nochmals.");
+  if (res.ok) {
+  setSent(true);
+  } else {
+  const result = await res.json();
+
+    if (result.error?.includes("duplicate key")) {
+      alert("Du hast bereits am Gewinnspiel teilgenommen. Pro Person ist nur eine Teilnahme möglich.");
+    } else {
+      alert("Es gab ein Problem. Bitte versuche es nochmals.");
+    }
+  }
+    
   }
 
   if (sent) {
