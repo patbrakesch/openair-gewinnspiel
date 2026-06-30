@@ -15,7 +15,7 @@ export default function Home() {
       campaign: "migros",
     };
 
-    const res = await fetch("/api/submit", {
+    const res = await fetch("/api/submit-migros", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

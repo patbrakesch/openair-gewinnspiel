@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     process.env.SUPABASE_SERVICE_ROLE_KEY!
   );
 
-  const { error } = await supabase.from("participants_vip").insert({
+  const { error } = await supabase.from("participants_migros").insert({
     first_name: body.first_name,
     last_name: body.last_name,
     birthdate: body.birthdate,
