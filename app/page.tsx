@@ -52,8 +52,7 @@ export default function Home() {
   return (
     <main className="page">
      <section className="heroImage">
-      <section className="heroImage">
-        <img src="/hero.png" alt="" />
+      <img src="/hero.png" alt="Gewinnspiel Openair Frauenfeld" />
     </section>
 
       <section className="formCard">
