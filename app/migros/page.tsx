@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle } from "lucide-react";
-import "./globals.css";
+import "../globals.css";
 
 export default function Home() {
   const [sent, setSent] = useState(false);
