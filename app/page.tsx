@@ -51,11 +51,9 @@ export default function Home() {
 
   return (
     <main className="page">
-      <section className="hero">
-        <h2>GEWINNE</h2>
-        <h1>Tickets fürs Openair</h1>
-        <h3>FRAUENFELD</h3>
-      </section>
+     <section className="heroImage">
+      <img src="/hero.png" alt="Gewinnspiel Openair Frauenfeld" />
+    </section>
 
       <section className="formCard">
         <form onSubmit={submitForm}>
