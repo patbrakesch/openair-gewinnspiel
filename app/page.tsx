@@ -38,11 +38,13 @@ export default function Home() {
 
   if (sent) {
     return (
-      <main className="page success">
-        <CheckCircle size={80} />
-        <h1>Danke!</h1>
-        <p>Du nimmst jetzt an der Verlosung teil.</p>
-        <p>Viel Glück!</p>
+      <main className="page thankYouPage">
+        <div className="thankYouCard">
+          <div className="checkmark">✓</div>
+          <h1>Danke!</h1>
+          <p>Du nimmst jetzt an der Verlosung teil.</p>
+          <p>Viel Glück!</p>
+        </div>
       </main>
     );
   }
