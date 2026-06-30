@@ -10,7 +10,10 @@ export default function Home() {
   async function submitForm(e: any) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
-    const data = Object.fromEntries(form.entries());
+    const data = {
+      ...Object.fromEntries(form.entries()),
+      campaign: "vip",
+    };
 
     const res = await fetch("/api/submit", {
       method: "POST",

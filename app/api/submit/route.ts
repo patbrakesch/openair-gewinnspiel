@@ -18,6 +18,7 @@ export async function POST(req: Request) {
     city: body.city,
     email: body.email,
     phone: body.phone,
+    campaign: body.campaign,
   });
 
   if (error) {
