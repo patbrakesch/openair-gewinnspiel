@@ -10,6 +10,23 @@ export default function Home() {
   async function submitForm(e: any) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
+    const birthdate = new Date(form.get("birthdate") as string);
+    const today = new Date();
+
+    let age = today.getFullYear() - birthdate.getFullYear();
+    const monthDiff = today.getMonth() - birthdate.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthdate.getDate())
+    ) {
+      age--;
+    }
+
+    if (age < 18) {
+      alert("Du musst mindestens 18 Jahre alt sein, um teilzunehmen.");
+      return;
+    }
     const data = {
       ...Object.fromEntries(form.entries()),
       campaign: "migros",
