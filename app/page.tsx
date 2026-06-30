@@ -100,7 +100,7 @@ export default function Home() {
         </form>
       </section>
 
-      <footer>Teilnahme bis: xx.xx.2026 · Datenschutz · Teilnahmebedingungen</footer>
+      
     </main>
   );
 }
