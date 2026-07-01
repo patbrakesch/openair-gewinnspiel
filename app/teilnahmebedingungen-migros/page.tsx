@@ -12,7 +12,6 @@ export default function Teilnahmebedingungen() {
 
         <p>
           <strong>Was gibt es zu gewinnen?</strong><br />
-          2x Openair Frauenfeld VIP Tickets für Samstag, 11.07.2026<br />
           10 Migros-Gutscheine im Wert von je CHF 100.–
         </p>
 
@@ -41,7 +40,7 @@ export default function Teilnahmebedingungen() {
         <p>
           <strong>Wie kann man teilnehmen?</strong><br />
           Nach einmaligem Drehen am Glücksrad gewinnt man entweder einen
-          Sofortpreis oder – falls das Rad auf einem VIP-Ticket oder einem
+          Sofortpreis oder – falls das Rad auf einem
           Migros-Gutschein stehen bleibt – nimmt man an der Verlosung teil.
           Nach Angabe der Kontaktdaten wird man bei einem allfälligen Gewinn
           benachrichtigt.

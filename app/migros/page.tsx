@@ -90,7 +90,7 @@ export default function Home() {
             <input type="checkbox" required />
             <span>
               Ich akzeptiere die{" "}
-              <a href="/teilnahmebedingungen" target="_blank" rel="noopener noreferrer">
+              <a href="/teilnahmebedingungen-migros" target="_blank" rel="noopener noreferrer">
                 Teilnahmebedingungen
               </a>.
             </span>
