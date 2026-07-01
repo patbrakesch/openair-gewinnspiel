@@ -12,7 +12,7 @@ export default function Teilnahmebedingungen() {
 
         <p>
           <strong>Was gibt es zu gewinnen?</strong><br />
-          2x Openair Frauenfeld VIP Tickets für Samstag, 11.07.2026
+          2x Openair Frauenfeld VIP Tickets für alle Tage
         </p>
 
         <h2>2. Teilnahmeberechtigung und Einschränkungen</h2>
