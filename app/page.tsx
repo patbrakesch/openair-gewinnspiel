@@ -91,11 +91,6 @@ export default function Home() {
             <span>Ich akzeptiere die Teilnahmebedingungen.</span>
           </label>
 
-          <label className="check">
-            <input type="checkbox" required />
-            <span>Ich akzeptiere die Datenschutzerklärung.</span>
-          </label>
-
           <button type="submit">TEILNEHMEN</button>
         </form>
       </section>
