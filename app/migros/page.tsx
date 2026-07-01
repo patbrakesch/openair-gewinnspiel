@@ -88,7 +88,12 @@ export default function Home() {
 
           <label className="check">
             <input type="checkbox" required />
-            <span>Ich akzeptiere die Teilnahmebedingungen.</span>
+            <span>
+              Ich akzeptiere die{" "}
+              <a href="/teilnahmebedingungen" target="_blank" rel="noopener noreferrer">
+                Teilnahmebedingungen
+              </a>.
+            </span>
           </label>
 
           <button type="submit">TEILNEHMEN</button>
